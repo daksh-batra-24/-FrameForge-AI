@@ -1,10 +1,10 @@
-# Visual StoryTeller AI
+# FrameForge AI
 
-A Streamlit web app that turns a simple idea into a five-scene visual story — generating narrative text with Google Gemini and images with Stable Diffusion, then stitching them into a short video.
+A Streamlit web app that forges a simple idea into a five-scene visual story — generating narrative text with Groq (Llama 3.3) and images with Stable Diffusion, then stitching them into a short video.
 
 ## Features
 
-- Generates a 5-scene story narrative from a single prompt using **Gemini 1.5 Flash**
+- Generates a 5-scene story narrative from a single prompt using **Groq (Llama 3.3 70B)**
 - Creates one image per scene using **Stability AI (SDXL 1.0)**
 - Compiles images into an MP4 video with **MoviePy**
 - Per-run output saved under `data/runs/` so runs don't overwrite each other
@@ -15,8 +15,8 @@ A Streamlit web app that turns a simple idea into a five-scene visual story — 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/storyteller_ai.git
-cd storyteller_ai
+git clone https://github.com/<your-username>/frameforge-ai.git
+cd frameforge-ai
 ```
 
 ### 2. Create a virtual environment
@@ -44,7 +44,7 @@ cp .env.example .env
 
 | Variable | Where to get it |
 |---|---|
-| `GOOGLE_API_KEY` | [Google AI Studio](https://aistudio.google.com/app/apikey) |
+| `GROQ_API_KEY` | [Groq Console](https://console.groq.com) |
 | `STABILITY_API_KEY` | [Stability AI](https://platform.stability.ai/account/keys) |
 
 ### 5. Run the app
@@ -56,7 +56,7 @@ streamlit run app.py
 ## Project Structure
 
 ```
-storyteller_ai/
+frameforge-ai/
 ├── app.py                        # Streamlit entry point
 ├── src/
 │   ├── narrative_generator.py    # Gemini story generation
@@ -70,7 +70,7 @@ storyteller_ai/
 ## Tech Stack
 
 - [Streamlit](https://streamlit.io/)
-- [Google Generative AI (Gemini)](https://ai.google.dev/)
+- [Groq API (Llama 3.3 70B)](https://console.groq.com)
 - [Stability AI SDK](https://github.com/Stability-AI/stability-sdk)
 - [MoviePy](https://zulko.github.io/moviepy/)
 - [Pillow](https://python-pillow.org/)

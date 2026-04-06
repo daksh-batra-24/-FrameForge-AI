@@ -6,9 +6,9 @@ from src import narrative_generator, image_generator
 if 'video_path' not in st.session_state:
     st.session_state.video_path = None
 
-st.set_page_config(page_title="Visual StoryTeller AI", page_icon='🌟', layout="wide")
-st.title("Visual StoryTeller AI")
-st.markdown("Enter a simple idea, and I'll generate a five-scene visual story")
+st.set_page_config(page_title="FrameForge AI", page_icon='🎬', layout="wide")
+st.title("FrameForge AI")
+st.markdown("Enter a simple idea, and I'll forge it into a five-scene visual story")
 
 # ----------------- Paths -------------------
 DATA_DIR = "data"
